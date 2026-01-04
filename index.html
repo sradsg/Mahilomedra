@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>MAHI LOHENDRA ™ | Official Telegram</title>
 
 <style>
@@ -28,13 +27,28 @@ body{
     max-width:380px;
     background:rgba(0,0,0,0.6);
     border-radius:22px;
-    padding:24px 18px 28px;
+    padding:22px 18px 28px;
     text-align:center;
     box-shadow:0 25px 60px rgba(0,0,0,0.6);
 }
 
+.logo{
+    width:120px;
+    height:120px;
+    margin:0 auto 12px;
+    border-radius:50%;
+    overflow:hidden;
+    border:4px solid #d4af37;
+}
+
+.logo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
 .brand{
-    font-size:30px;
+    font-size:26px;
     font-weight:800;
     letter-spacing:2px;
     color:#d4af37;
@@ -45,7 +59,7 @@ body{
 .year{
     font-size:14px;
     color:#ccc;
-    margin-bottom:18px;
+    margin-bottom:16px;
 }
 
 .counter{
@@ -98,7 +112,6 @@ body{
 .footer{
     font-size:14px;
     color:#eee;
-    margin-top:10px;
 }
 </style>
 </head>
@@ -107,15 +120,20 @@ body{
 
 <div class="card">
 
+    <!-- LOGO -->
+    <div class="logo">
+        <img src="./logo.png" alt="MAHI LOHENDRA Logo">
+    </div>
+
     <div class="brand">MAHI LOHENDRA ™</div>
     <div class="year">Trusted Cricket Analysis • Since 2016</div>
 
     <div class="counter">53</div>
 
     <div class="points">
-        <p>✅ <span>Oldest Cricket Analysis Channel</span> 🏆</p>
-        <p>✅ <span>90/88 Match Passed Record</span> 🏆</p>
-        <p>✅ <span>44/43 BBL Matches Passed</span> 🏆</p>
+        <p>✅ <span>Oldest Cricket Analysis Channel</span></p>
+        <p>✅ <span>90/88 Match Passed Record</span></p>
+        <p>✅ <span>44/43 BBL Matches Passed</span></p>
     </div>
 
     <a href="https://t.me/+dd352NdNLYoyZjhl" class="btn">
@@ -123,7 +141,7 @@ body{
     </a>
 
     <div class="timer">
-        FREE JOINING ENDS IN <span id="timer">53</span>
+        FREE JOINING ENDS IN <span>53</span>
     </div>
 
     <div class="footer">
@@ -131,16 +149,6 @@ body{
     </div>
 
 </div>
-
-<script>
-let t = 53;
-setInterval(()=>{
-    if(t > 1){
-        t--;
-        document.getElementById("timer").innerText = t;
-    }
-},1000);
-</script>
 
 </body>
 </html>
